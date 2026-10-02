@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>萌新乐园 · 进入方舟服务器</title>
+  <meta http-equiv="refresh" content="0;url=http://222.175.222.19:36380/home" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+      background: radial-gradient(circle at 50% 28%, #16202e 0%, #0a0d14 72%);
+      color: #e9eef5; padding: 24px;
+    }
+    .card {
+      width: 100%; max-width: 420px; text-align: center;
+      background: rgba(20, 28, 40, .72);
+      border: 1px solid rgba(212, 160, 74, .35);
+      border-radius: 16px; padding: 42px 28px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .5);
+    }
+    .logo {
+      display: inline-block; font-size: 20px; font-weight: 800; letter-spacing: 3px;
+      color: #1a1206; background: linear-gradient(180deg, #ffd98a, #e8923a);
+      padding: 8px 18px; border-radius: 10px; margin-bottom: 18px;
+    }
+    h1 { font-size: 21px; color: #f5c66b; letter-spacing: 1px; margin-bottom: 10px; }
+    p { color: #aeb9c8; font-size: 14px; line-height: 1.7; }
+    .spin {
+      margin: 22px auto; width: 34px; height: 34px; border-radius: 50%;
+      border: 3px solid rgba(245, 198, 107, .25); border-top-color: #f5c66b;
+      animation: sp 1s linear infinite;
+    }
+    @keyframes sp { to { transform: rotate(360deg); } }
+    a.btn {
+      display: inline-block; margin-top: 20px; padding: 11px 28px; border-radius: 10px;
+      background: linear-gradient(180deg, #e8923a, #c96f1f); color: #fff;
+      text-decoration: none; font-size: 15px; font-weight: 600;
+    }
+    .url { margin-top: 18px; font-size: 12px; color: #6f7d8f; word-break: break-all; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">ARK</div>
+    <h1>萌新乐园 · 方舟服务器</h1>
+    <p>正在进入服务器，请稍候…</p>
+    <div class="spin"></div>
+    <a class="btn" href="http://222.175.222.19:36380/home">若未自动跳转，点此立即进入</a>
+    <div class="url">目标地址：http://222.175.222.19:36380/home</div>
+  </div>
+  <script>
+    // 顶层跳转到游戏服务器门户（由 https 页面跳转到 http 地址属于顶层导航，不受混合内容限制）
+    var TARGET = "http://222.175.222.19:36380/home";
+    window.location.replace(TARGET);
+  </script>
+</body>
+</html>
